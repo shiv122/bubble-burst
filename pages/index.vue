@@ -65,7 +65,7 @@
               bubble.class,
               bubble.highlight &&
                 ` ring-2 ring-[var(--ring-color)] ring-offset-1 ring-offset-slate-800	`,
-              'bubble z-10 absolute',
+              'bubble z-10 absolute ',
             ]"
             @mouseleave="highlight = []"
             :style="{
@@ -79,7 +79,7 @@
             }"
           >
             <img
-              v-if="!bubble.done"
+              v-if="!bubble.done && radius === '100%'"
               src="/assets/bubble.png"
               class="absolute top-0 opacity-[0.7]"
             />
